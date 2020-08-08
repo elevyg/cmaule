@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;700&display=swap");
+
+html {
+  font-family: "Muli", sans-serif;
+}
+
+/* Navbar */
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+#navbar.top {
+  background: transparent;
+}
+
+#quienes-somos-container {
+  background: url("https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3387&q=80")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}

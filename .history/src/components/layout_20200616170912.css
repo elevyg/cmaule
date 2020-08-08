@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Link:hover {
+  @apply text-gray-500 m-4 p-4;
+}
