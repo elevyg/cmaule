@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{"+74L":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),s=n.n(a),c=n("Bl7J"),i=n("vrFN");t.default=function(){return s.a.createElement(c.a,null,s.a.createElement(i.a,{title:"Quienes Somos"}),s.a.createElement("div",{id:"quienes-somos-container",className:"h-screen flex justify-center items-center"},s.a.createElement("h1",{className:"text-6xl text-white font-bold"},"Quienes Somos")))}}}]);
+//# sourceMappingURL=component---src-pages-quienes-somos-js-6c23b962bd08310dd096.js.map

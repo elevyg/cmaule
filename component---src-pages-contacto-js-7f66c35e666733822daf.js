@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"1zJ4":function(t,e,a){"use strict";a.r(e);var n=a("q1tI"),c=a.n(n),l=a("Bl7J"),o=a("vrFN");e.default=function(){return c.a.createElement(l.a,null,c.a.createElement(o.a,{title:"Contacto"}),c.a.createElement("h1",{className:"text-4xl"},"Contato"))}}}]);
+//# sourceMappingURL=component---src-pages-contacto-js-7f66c35e666733822daf.js.map

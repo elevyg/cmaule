@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{UHzN:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a),l=n("Bl7J"),c=n("vrFN");t.default=function(){return r.a.createElement(l.a,null,r.a.createElement(c.a,{title:"Arriendos"}),r.a.createElement("h1",{className:"text-4xl"},"Arriendos"))}}}]);
+//# sourceMappingURL=component---src-pages-arriendos-js-9de64965f9a1cb293763.js.map
