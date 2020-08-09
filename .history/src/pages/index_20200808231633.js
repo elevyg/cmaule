@@ -26,9 +26,9 @@ export default IndexPage
 const Hero = () => {
   return (
     <Flip direction="vertical" duration={1000} triggerOnce>
-      <div id="index" className=" flex justify-center items-center ">
+      <div id="index" className=" flex justify-center items-center text-center">
         <Fade direction="vertical" triggerOnce delay={500}>
-          <h1 className=" text-center text-4xl md:text-6xl text-white font-bold">
+          <h1 className=" text-4xl md:text-6xl text-white font-bold">
             30 años de experiencia
           </h1>
         </Fade>
