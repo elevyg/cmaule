@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    ".gitignore": false,
+    ".prettierignore": false,
+    ".prettierrc": false,
+    ".cache": false,
+    ".history": false,
+    ".vscode": false,
+    "node_modules": false,
+    "public": false,
+    "gatsby-config.js": false,
+    "gatsby-node.js": false,
+    "gatsby-ssr.js": false,
+    "LICENSE": false,
+    "package-lock.json": false,
+    "postcss.config.js": false,
+    "README.md": false
+  },
+  "workspace.isHidden": false
+}
