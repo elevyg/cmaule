@@ -84,7 +84,7 @@ const Valores = ({ valores, className }) => (
           key={valor}
           className="text-lg md:text-3xl font-bold  mx-3 md:my-6"
           whileHover={{ scale: 1.3 }}
-          style={{ color: COLORES[index % COLORES.length] }}
+          style={{ color: COLORES[index] }}
         >
           {valor}
         </motion.p>
