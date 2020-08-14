@@ -2,7 +2,6 @@ const path = require("path")
 
 const machinery = require("./src/data/maquinaria.json")
 const trucks = require("./src/data/camiones.json")
-
 const IMAGE_PATH = "./src/images/machinery"
 
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
@@ -46,10 +45,10 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   })
 
   trucks.forEach(truck => {
-    const { name, price, priceTimeUnit } = truck
+    const { id, name, price, priceTimeUnit } = truck
 
-    const node = {
-      id: createNodeId(`truck-id-${name}`),
+    const node_2 = {
+      id,
       name,
       price,
       priceTimeUnit,
@@ -59,6 +58,6 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       },
     }
 
-    actions.createNode(node)
+    actions.createNode(node_2)
   })
 }

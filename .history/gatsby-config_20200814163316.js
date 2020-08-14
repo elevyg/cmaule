@@ -6,8 +6,7 @@ module.exports = {
     author: `Eyal Levy`,
   },
   plugins: [
-    `gatsby-transformer-json`,
-    `gatsby-plugin-fontawesome-css`,
+    `gatsby-transformer-json``gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     {
@@ -15,6 +14,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `camiones`,
+        path: `${__dirname}/src/data`,
+        plugins: [`gatsby-transformer-json`],
       },
     },
     `gatsby-transformer-sharp`,

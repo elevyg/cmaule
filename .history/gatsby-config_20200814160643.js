@@ -6,7 +6,6 @@ module.exports = {
     author: `Eyal Levy`,
   },
   plugins: [
-    `gatsby-transformer-json`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,

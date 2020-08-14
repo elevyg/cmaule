@@ -58,22 +58,7 @@ const Arriendos = ({ data }) => {
         image={data.pavimentadora.childImageSharp.fluid}
         data={trucks}
         name="camiones"
-      >
-        <div className="my-3 mx-10">
-          <h1 className="text-2xl text-custom-gray">
-            Pavimentadora autopropulsada CMI Super 200
-          </h1>
-          <h3 className="font-semibold text-custom-yellow text-xl">
-            2 UF + IVA / día
-          </h3>
-          <p>
-            Arriendo de hormigón pavimentadora autopropulsada 3.0 a 5.0 m de
-            ancho, 45cm profundidad máximo, base Santiago, con operador,
-            ayudante y mantenimiento, sin petróleo, período mínimo de arriendo:
-            1 mes & 165 horas mínimo; jornada normal de trabajo;{" "}
-          </p>
-        </div>
-      </SingleItemCard>
+      />
     </Layout>
   )
 }
@@ -100,7 +85,7 @@ const MachineryGird = ({ item }) => (
 
 const SingleItemCard = ({ image, name, children }) => (
   <motion.div
-    className=" flex flex-col md:flex-row justify-start items-center m-5 p-5 bg-gray-100 shadow-2xl rounded-md max-h-full"
+    className=" flex justify-start items-center m-5 p-5 bg-gray-100 shadow-2xl rounded-md max-h-full"
     whileHover={{ scale: 1 }}
   >
     <Img

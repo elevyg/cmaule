@@ -6,7 +6,6 @@ module.exports = {
     author: `Eyal Levy`,
   },
   plugins: [
-    `gatsby-transformer-json`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
@@ -17,6 +16,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

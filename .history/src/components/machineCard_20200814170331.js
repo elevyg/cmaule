@@ -10,7 +10,7 @@ const MachineCard = ({ name, price, children }) => {
       <div className="flex flex-col items-start justify-between ml-3 min-h-full">
         <h1 className="text-lg text-custom-gray">{name}</h1>
         <h3 className="font-semibold text-custom-yellow text-xl">
-          {price} UF + IVA / hora
+          {price} UF + IVA /hora
         </h3>
       </div>
     </motion.div>

@@ -17,6 +17,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `camiones`,
+        path: `${__dirname}/src/data`,
+        plugins: [`gatsby-transformer-json`],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

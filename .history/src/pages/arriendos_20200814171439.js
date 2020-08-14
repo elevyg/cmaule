@@ -42,38 +42,9 @@ const Arriendos = ({ data }) => {
       </p>
       <SingleItemCard
         image={data.camiones.childImageSharp.fluid}
-        name="camiones"
-      >
-        {trucks.map(t => (
-          <div className="my-3 mx-10">
-            <h1 className="text-2xl text-custom-gray">{t.name}</h1>
-            <h3 className="font-semibold text-custom-yellow text-xl">
-              {t.price} UF + IVA / mes
-            </h3>
-          </div>
-        ))}
-      </SingleItemCard>
-      <SectionHeader>Pavimentadora</SectionHeader>
-      <SingleItemCard
-        image={data.pavimentadora.childImageSharp.fluid}
         data={trucks}
         name="camiones"
-      >
-        <div className="my-3 mx-10">
-          <h1 className="text-2xl text-custom-gray">
-            Pavimentadora autopropulsada CMI Super 200
-          </h1>
-          <h3 className="font-semibold text-custom-yellow text-xl">
-            2 UF + IVA / día
-          </h3>
-          <p>
-            Arriendo de hormigón pavimentadora autopropulsada 3.0 a 5.0 m de
-            ancho, 45cm profundidad máximo, base Santiago, con operador,
-            ayudante y mantenimiento, sin petróleo, período mínimo de arriendo:
-            1 mes & 165 horas mínimo; jornada normal de trabajo;{" "}
-          </p>
-        </div>
-      </SingleItemCard>
+      />
     </Layout>
   )
 }
@@ -98,9 +69,9 @@ const MachineryGird = ({ item }) => (
   </div>
 )
 
-const SingleItemCard = ({ image, name, children }) => (
+const SingleItemCard = ({ image, data, name }) => (
   <motion.div
-    className=" flex flex-col md:flex-row justify-start items-center m-5 p-5 bg-gray-100 shadow-2xl rounded-md max-h-full"
+    className=" flex justify-start items-center m-5 p-5 bg-gray-100 shadow-2xl rounded-md max-h-full"
     whileHover={{ scale: 1 }}
   >
     <Img
@@ -108,7 +79,16 @@ const SingleItemCard = ({ image, name, children }) => (
       alt={name}
       className="h-full w-full max-w-xl rounded-md"
     />
-    <div className="flex flex-col justify-around">{children}</div>
+    <div className="flex flex-col justify-around">
+      {data.map(t => (
+        <div className="my-3 mx-10">
+          <h1 className="text-2xl text-custom-gray">{t.name}</h1>
+          <h3 className="font-semibold text-custom-yellow text-xl">
+            {t.price} UF + IVA / mes
+          </h3>
+        </div>
+      ))}
+    </div>
   </motion.div>
 )
 
@@ -138,15 +118,6 @@ export const query = graphql`
       }
     }
     camiones: file(relativePath: { eq: "machinery/camiones.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    pavimentadora: file(
-      relativePath: { eq: "machinery/pavimentadora-200CMI.jpg" }
-    ) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

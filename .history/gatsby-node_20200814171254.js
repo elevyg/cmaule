@@ -2,7 +2,7 @@ const path = require("path")
 
 const machinery = require("./src/data/maquinaria.json")
 const trucks = require("./src/data/camiones.json")
-
+const paving = require("./src/data/pavimentadora.json")
 const IMAGE_PATH = "./src/images/machinery"
 
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
