@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <div>
         <main className="h-auto ">{children}</main>
-        <footer className="h-64 bg-custom-gray flex justify-center items-center text-white">
+        <footer className="h-64 bg-custom-gray flex justify-center items-center">
           © Derechos reservados {new Date().getFullYear()}
         </footer>
       </div>
