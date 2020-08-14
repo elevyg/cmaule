@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "Motoniveladora John Deere 770G",
+    "price": 1.35,
+    "priceTimeUnit": "day",
+    "img": "MotoniveladorasJohn Deere 770G.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Rodillo 10 Toneladas Hamm 3410",
+    "price": 0.87,
+    "priceTimeUnit": "day",
+    "img": "Rodillos Hamm.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Retroexcavadora John Deere 310K",
+    "price": 0.6,
+    "priceTimeUnit": "day",
+    "img": "John Deere 310 K.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Excavadora Oruga Hyundai 22T",
+    "price": 0.94,
+    "priceTimeUnit": "day",
+    "img": "excavadoras-oruga-hyundai.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Excavadora Neumática Hyundai 18 T",
+    "price": 0.95,
+    "priceTimeUnit": "day",
+    "img": "excavadoras-oruga-hyundai.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Excavadora Neumática 5.5 T",
+    "price": 0.8,
+    "priceTimeUnit": "day",
+    "img": "MiniExcavadoras Neumáticas  Bobcat 55W.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Pavimentadora autopropulsada CMI Super 200",
+    "price": 2,
+    "priceTimeUnit": "day",
+    "img": "Pavimentadora Autopropulsada Super 200 CMI.jpg"
+  }
+]

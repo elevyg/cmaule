@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Camión tolva 14 cubos",
+    "price": 135,
+    "priceTimeUnit": "month"
+  },
+  {
+    "id": 2,
+    "name": "Camión Tolva 10 cubos",
+    "price": 102,
+    "priceTimeUnit": "month"
+  },
+  {
+    "id": 3,
+    "name": "Camión Aljibe 10 litros ",
+    "price": 135,
+    "priceTimeUnit": "month"
+  },
+  {
+    "id": 1,
+    "name": "Camión tolva 14 cubos",
+    "price": 135,
+    "priceTimeUnit": "month"
+  }
+]
