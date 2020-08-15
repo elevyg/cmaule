@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"1zJ4":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),c=a.n(n),l=a("Bl7J"),o=a("vrFN");t.default=function(){return c.a.createElement(l.a,null,c.a.createElement(o.a,{title:"Contacto"}),c.a.createElement("div",{className:"flex justify-center items-end bg- h-64 bg-custom-yellow"},c.a.createElement("h1",{className:"text-4xl text-white mb-5"},"Contacto")))}}}]);
+//# sourceMappingURL=component---src-pages-contacto-js-771f4f60b538516d9b36.js.map
