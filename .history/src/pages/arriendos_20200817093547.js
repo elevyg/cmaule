@@ -90,7 +90,7 @@ const MachineryGird = ({ item }) => (
           <Img
             fluid={m.image.childImageSharp.fluid}
             atl={m.name}
-            className="h-40 w-1/2 max-w-xl rounded-md"
+            className="h-32 w-1/2 max-w-xl rounded-md"
             loading="eager"
           />
         </MachineCard>

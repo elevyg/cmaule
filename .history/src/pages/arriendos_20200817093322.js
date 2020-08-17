@@ -90,7 +90,7 @@ const MachineryGird = ({ item }) => (
           <Img
             fluid={m.image.childImageSharp.fluid}
             atl={m.name}
-            className="h-40 w-1/2 max-w-xl rounded-md"
+            className="h-full w-full max-w-xl rounded-md"
             loading="eager"
           />
         </MachineCard>
@@ -107,7 +107,7 @@ const SingleItemCard = ({ image, name, children }) => (
     <Img
       fluid={image}
       alt={name}
-      className="h-full w-1/2 max-w-xl rounded-md"
+      className="h-32 w-1/2 max-w-xl rounded-md"
       loading="eager"
     />
     <div className="w-1/2 flex flex-col justify-around">{children}</div>
