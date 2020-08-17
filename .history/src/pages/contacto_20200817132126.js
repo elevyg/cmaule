@@ -2,9 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import { COLORES } from "../constants/colors"
 import StyledInput from "../components/StyledInput"
-import ContactInfo from "../components/contactInfo"
 
 const Contacto = () => (
   <Layout>
@@ -34,6 +33,13 @@ const Map = () => {
     </div>
   )
 }
+
+const IconText = ({ icon, children, color }) => (
+  <div className="flex items-center justify-start">
+    <FontAwesomeIcon icon={icon} color={color} className="mx-5" />
+    {children}
+  </div>
+)
 
 const Form = () => {
   return (

@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 
 import Navbar from "./navbar"
 import "../css/layout.css"
-import ContactInfo from "./contactInfo"
 
 const Layout = ({ children }) => {
   return (
@@ -20,7 +19,6 @@ const Layout = ({ children }) => {
         <main className="h-auto ">{children}</main>
         <footer className="h-64 bg-custom-gray flex justify-around items-center text-white">
           © Derechos reservados {new Date().getFullYear()}
-          <ContactInfo footer={true} />
         </footer>
       </div>
     </div>
