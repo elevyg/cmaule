@@ -16,8 +16,8 @@ const Contacto = () => (
     <div className="w-full flex flex-col-reverse md:flex-row items-start justify-between">
       <Map />
       <div className="w-full md:w-1/2 p-3">
-        <ContactInfo />
         <Form />
+        <ContactInfo />
       </div>
     </div>
   </Layout>

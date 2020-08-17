@@ -16,8 +16,8 @@ const Contacto = () => (
     <div className="w-full flex flex-col-reverse md:flex-row items-start justify-between">
       <Map />
       <div className="w-full md:w-1/2 p-3">
-        <ContactInfo />
         <Form />
+        <ContactInfo />
       </div>
     </div>
   </Layout>
@@ -43,19 +43,19 @@ const Form = () => {
       action="https://www.flexyform.com/f/27fd84adf576c792322dc88db1a2c7e090e51f90"
     >
       <div>
-        <label htmlFor="nombre">Nombre completo*</label>
-        <StyledInput type="text" name="nombre" id="nombre" required />
+        <label for="nombre">Nombre completo*</label>
+        <StyledInput type="text" name="nombre" required />
       </div>
       <div>
-        <label htmlFor="email">Correo Electrónico*</label>
+        <label>Correo Electrónico*</label>
         <StyledInput type="email" name="email" required />
       </div>
       <div>
-        <label htmlFor="teléfono">Número de teléfono*</label>
+        <label>Número de teléfono*</label>
         <StyledInput type="text" name="teléfono" required />
       </div>
       <div className="items-stretch h-full">
-        <label htmlFor="mensaje">Mensaje*</label>
+        <label>Mensaje*</label>
         <StyledInput
           type="text"
           name="mensaje"
