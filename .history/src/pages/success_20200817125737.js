@@ -14,12 +14,10 @@ const Success = () => (
       <img
         alt="success"
         src={require("../images/success.png")}
-        className=" max-w-md md:max-w-2xl"
+        className="max-w-2xl"
       />
-      <div className="my-3">
-        <h2 className="text-2xl font-bold text-custom-blue">
-          Muchas gracias por contactarnos
-        </h2>
+      <div>
+        <h2 className="text-2xl">Muchas gracias por contactarnos</h2>
         <p className="text-lg">Nuestro equipo te responderá a la brevedad</p>
       </div>
     </div>
