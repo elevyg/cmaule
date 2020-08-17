@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{eTs6:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),r=a.n(n),l=a("Bl7J"),s=a("vrFN");t.default=function(){return r.a.createElement(l.a,null,r.a.createElement(s.a,{title:"Obras"}),r.a.createElement("h1",{className:"text-4xl"},"Obras"))}}}]);
-//# sourceMappingURL=component---src-pages-obras-js-b54372c7ea6d7c359685.js.map
