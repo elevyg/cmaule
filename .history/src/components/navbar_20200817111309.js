@@ -19,7 +19,7 @@ const Navbar = () => {
     <motion.header
       className="flex flex-col w-full h-auto"
       style={
-        scrolled > 16 * 14
+        scrolled > 16 * 16
           ? { backgroundColor: COLORES[1] }
           : { backgroundColor: "transparent" }
       }

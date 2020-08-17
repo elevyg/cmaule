@@ -64,9 +64,7 @@ const IconText = ({ icon, children, color }) => (
 )
 
 const Form = () => {
-  const handleAction = () => {
-    return "https://www.flexyform.com/f/27fd84adf576c792322dc88db1a2c7e090e51f90"
-  }
+  const handleAction = () => {}
   return (
     <form method="post" action={handleAction}>
       <div>
@@ -78,8 +76,8 @@ const Form = () => {
         <StyledInput type="email" name="email" required />
       </div>
       <div>
-        <label>Número de teléfono*</label>
-        <StyledInput type="text" name="phone" required />
+        <label>Número de teléfono</label>
+        <StyledInput type="text" name="phone" />
       </div>
       <div className="items-stretch h-full">
         <label>Mensaje*</label>
@@ -88,9 +86,6 @@ const Form = () => {
           name="message"
           style={{ height: 200 }}
           required
-          textArea={true}
-          rows={5}
-          className="flex"
         />
       </div>
       <div className="w-full my-3">

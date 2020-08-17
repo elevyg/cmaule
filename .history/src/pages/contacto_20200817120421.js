@@ -64,9 +64,7 @@ const IconText = ({ icon, children, color }) => (
 )
 
 const Form = () => {
-  const handleAction = () => {
-    return "https://www.flexyform.com/f/27fd84adf576c792322dc88db1a2c7e090e51f90"
-  }
+  const handleAction = () => {}
   return (
     <form method="post" action={handleAction}>
       <div>
@@ -90,7 +88,7 @@ const Form = () => {
           required
           textArea={true}
           rows={5}
-          className="flex"
+          style={{ itemsstart: true }}
         />
       </div>
       <div className="w-full my-3">

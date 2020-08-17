@@ -25,6 +25,12 @@ const Contacto = () => (
         <Content />
       </div>
     </div>
+    <button
+      class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+      type="button"
+    >
+      Sign Up
+    </button>
   </Layout>
 )
 
@@ -64,44 +70,25 @@ const IconText = ({ icon, children, color }) => (
 )
 
 const Form = () => {
-  const handleAction = () => {
-    return "https://www.flexyform.com/f/27fd84adf576c792322dc88db1a2c7e090e51f90"
-  }
   return (
-    <form method="post" action={handleAction}>
+    <div>
       <div>
-        <label>Nombre completo*</label>
-        <StyledInput type="text" name="name" required />
+        <label>Nombre completo</label>
+        <StyledInput type="text" name="name" />
       </div>
       <div>
-        <label>Correo Electrónico*</label>
-        <StyledInput type="email" name="email" required />
+        <label>Correo Electrónico</label>
+        <StyledInput type="email" name="name" />
       </div>
       <div>
-        <label>Número de teléfono*</label>
-        <StyledInput type="text" name="phone" required />
+        <label>Número de teléfono</label>
+        <StyledInput type="text" name="name" />
       </div>
       <div className="items-stretch h-full">
-        <label>Mensaje*</label>
-        <StyledInput
-          type="text"
-          name="message"
-          style={{ height: 200 }}
-          required
-          textArea={true}
-          rows={5}
-          className="flex"
-        />
+        <label>Mensaje</label>
+        <StyledInput type="text" name="name" style={{ height: 200 }} />
       </div>
-      <div className="w-full my-3">
-        <button
-          class="shadow bg-custom-blue hover:bg-custom-yellow focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-          type="button"
-        >
-          Enviar
-        </button>
-      </div>
-    </form>
+    </div>
   )
 }
 

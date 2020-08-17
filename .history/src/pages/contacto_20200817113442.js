@@ -3,13 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faMapPin as MapIcon,
   faPhoneSquare as PhoneIcon,
-  faMailBulk as MailIcon,
 } from "@fortawesome/free-solid-svg-icons"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { COLORES } from "../constants/colors"
-import StyledInput from "../components/StyledInput"
 
 const Contacto = () => (
   <Layout>
@@ -18,11 +15,11 @@ const Contacto = () => (
     <div className="flex justify-center items-end bg- h-64 bg-custom-yellow">
       <h1 className="text-4xl text-white mb-5">Contacto</h1>
     </div>
-    <div className="w-full flex flex-col-reverse md:flex-row items-start justify-between">
+    <div className="w-full flex items-start justify-between">
       <Map />
-      <div className="w-full md:w-1/2 p-3">
-        <Form />
+      <div className="w-1/2 p-3">
         <Content />
+        <Form />
       </div>
     </div>
   </Layout>
@@ -30,7 +27,7 @@ const Contacto = () => (
 
 const Map = () => {
   return (
-    <div className="w-full md:w-1/2">
+    <div className="w-1/2">
       <iframe
         className="w-full"
         style={{ height: 600 }}
@@ -42,15 +39,12 @@ const Map = () => {
 
 const Content = () => {
   return (
-    <div className="my-4">
+    <div>
       <IconText icon={MapIcon} color="red">
         <p>Napoleón 3010 Of 72, Las Condes, Santiago Chile.</p>
       </IconText>
       <IconText icon={PhoneIcon} color="green">
         <p>+56 22 233 38 65</p>
-      </IconText>
-      <IconText icon={MailIcon} color={COLORES[1]}>
-        <p>contacto@cmaule.cl</p>
       </IconText>
     </div>
   )
@@ -64,45 +58,21 @@ const IconText = ({ icon, children, color }) => (
 )
 
 const Form = () => {
-  const handleAction = () => {
-    return "https://www.flexyform.com/f/27fd84adf576c792322dc88db1a2c7e090e51f90"
-  }
   return (
-    <form method="post" action={handleAction}>
+    <div>
       <div>
-        <label>Nombre completo*</label>
-        <StyledInput type="text" name="name" required />
-      </div>
-      <div>
-        <label>Correo Electrónico*</label>
-        <StyledInput type="email" name="email" required />
+        <label>Nombre completo</label>
+        <input type="text" name="name" />
       </div>
       <div>
-        <label>Número de teléfono*</label>
-        <StyledInput type="text" name="phone" required />
+        <label>Nombre completo</label>
+        <input type="text" name="name" />
       </div>
-      <div className="items-stretch h-full">
-        <label>Mensaje*</label>
-        <StyledInput
-          type="text"
-          name="message"
-          style={{ height: 200 }}
-          required
-          textArea={true}
-          rows={5}
-          className="flex"
-        />
+      <div>
+        <label>Nombre completo</label>
+        <input type="text" name="name" />
       </div>
-      <div className="w-full my-3">
-        <button
-          class="shadow bg-custom-blue hover:bg-custom-yellow focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-          type="button"
-        >
-          Enviar
-        </button>
-      </div>
-    </form>
+    </div>
   )
 }
-
 export default Contacto

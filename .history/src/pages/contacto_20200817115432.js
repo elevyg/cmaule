@@ -64,34 +64,24 @@ const IconText = ({ icon, children, color }) => (
 )
 
 const Form = () => {
-  const handleAction = () => {
-    return "https://www.flexyform.com/f/27fd84adf576c792322dc88db1a2c7e090e51f90"
-  }
+  const handleAction = () => {}
   return (
     <form method="post" action={handleAction}>
       <div>
-        <label>Nombre completo*</label>
-        <StyledInput type="text" name="name" required />
+        <label>Nombre completo</label>
+        <StyledInput type="text" name="name" />
       </div>
       <div>
-        <label>Correo Electrónico*</label>
-        <StyledInput type="email" name="email" required />
+        <label>Correo Electrónico</label>
+        <StyledInput type="email" name="email" />
       </div>
       <div>
-        <label>Número de teléfono*</label>
-        <StyledInput type="text" name="phone" required />
+        <label>Número de teléfono</label>
+        <StyledInput type="text" name="phone" />
       </div>
       <div className="items-stretch h-full">
-        <label>Mensaje*</label>
-        <StyledInput
-          type="text"
-          name="message"
-          style={{ height: 200 }}
-          required
-          textArea={true}
-          rows={5}
-          className="flex"
-        />
+        <label>Mensaje</label>
+        <StyledInput type="text" name="message" style={{ height: 200 }} />
       </div>
       <div className="w-full my-3">
         <button

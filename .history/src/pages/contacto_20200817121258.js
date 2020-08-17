@@ -65,7 +65,8 @@ const IconText = ({ icon, children, color }) => (
 
 const Form = () => {
   const handleAction = () => {
-    return "https://www.flexyform.com/f/27fd84adf576c792322dc88db1a2c7e090e51f90"
+    return (action =
+      "https://www.flexyform.com/f/27fd84adf576c792322dc88db1a2c7e090e51f90")
   }
   return (
     <form method="post" action={handleAction}>

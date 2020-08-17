@@ -101,7 +101,7 @@ const MachineryGird = ({ item }) => (
 
 const SingleItemCard = ({ image, name, children }) => (
   <motion.div
-    className="flex flex-col md:flex-row justify-start items-center m-5 p-5 bg-gray-100 shadow-2xl rounded-md max-h-full"
+    className="flex flex-col md:flex-row justify-start items-center m-5 p-5 bg-gray-100 shadow-2xl rounded-md w-full max-w-full max-h-full"
     whileHover={{ scale: 1 }}
   >
     <Img
