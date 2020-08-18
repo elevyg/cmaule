@@ -1,21 +1,21 @@
 {
   "files.exclude": {
-    ".gitignore": true,
-    ".prettierignore": true,
-    ".prettierrc": true,
-    ".cache": true,
-    ".history": true,
-    ".vscode": true,
-    "node_modules": true,
-    "public": true,
-    "gatsby-config.js": true,
-    "gatsby-node.js": true,
-    "gatsby-ssr.js": true,
-    "LICENSE": true,
-    "package-lock.json": true,
-    "postcss.config.js": true,
-    "README.md": true,
-    "gatsby-browser.js": true
+    ".gitignore": false,
+    ".prettierignore": false,
+    ".prettierrc": false,
+    ".cache": false,
+    ".history": false,
+    ".vscode": false,
+    "node_modules": false,
+    "public": false,
+    "gatsby-config.js": false,
+    "gatsby-node.js": false,
+    "gatsby-ssr.js": false,
+    "LICENSE": false,
+    "package-lock.json": false,
+    "postcss.config.js": false,
+    "README.md": false,
+    "gatsby-browser.js": false
   },
-  "workspace.isHidden": true
+  "workspace.isHidden": false
 }
