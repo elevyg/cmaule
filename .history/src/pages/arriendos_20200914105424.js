@@ -189,7 +189,6 @@ const QuoteForm = ({ onClick, data }) => {
                   {data.map(m => (
                     <>
                       <label
-                        key={m.name}
                         htmlFor={m.name}
                         class="inline-flex items-center mt-3"
                       >
@@ -206,16 +205,15 @@ const QuoteForm = ({ onClick, data }) => {
                   ))}
                 </div>
               </div>
-
-              <div className="flex items-center justify-between mt-2">
-                <Button onClick={onClick} color="gray">
-                  Cerrar
-                </Button>
-                <Button type="submit" color="yellow">
-                  Enviar
-                </Button>
-              </div>
             </form>
+          </div>
+          <div className="flex items-center justify-between mt-2">
+            <Button onClick={onClick} color="gray">
+              Cerrar
+            </Button>
+            <Button type="submit" color="yellow">
+              Enviar
+            </Button>
           </div>
         </div>
       </div>

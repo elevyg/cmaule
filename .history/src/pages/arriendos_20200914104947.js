@@ -193,29 +193,26 @@ const QuoteForm = ({ onClick, data }) => {
                         htmlFor={m.name}
                         class="inline-flex items-center mt-3"
                       >
-                        <input
-                          type="checkbox"
-                          id={m.name}
-                          name={m.name}
-                          key={m.name}
-                          className="form-checkbox h-5 w-5 text-custom-yellow focus:outline-none"
-                        />
                         <span class="ml-2 ">{m.name}</span>
                       </label>
+                      <input
+                        type="checkbox"
+                        id={m.name}
+                        className="form-checkbox h-5 w-5 text-custom-yellow focus:outline-none"
+                      />
                     </>
                   ))}
                 </div>
               </div>
-
-              <div className="flex items-center justify-between mt-2">
-                <Button onClick={onClick} color="gray">
-                  Cerrar
-                </Button>
-                <Button type="submit" color="yellow">
-                  Enviar
-                </Button>
-              </div>
             </form>
+          </div>
+          <div className="flex items-center justify-between mt-2">
+            <Button onClick={onClick} color="gray">
+              Cerrar
+            </Button>
+            <Button type="submit" color="yellow">
+              Enviar
+            </Button>
           </div>
         </div>
       </div>

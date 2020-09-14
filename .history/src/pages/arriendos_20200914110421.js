@@ -214,8 +214,8 @@ const QuoteForm = ({ onClick, data }) => {
                 <Button type="submit" color="yellow">
                   Enviar
                 </Button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
