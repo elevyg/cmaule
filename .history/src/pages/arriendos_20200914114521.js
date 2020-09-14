@@ -1,4 +1,5 @@
-/* eslint jsx-a11y/control-has-associated-label: off */
+/* eslint jsx-a11y/label-has-associated-control: ["error", { assert: "either" } ] */
+
 import React, { useState } from "react"
 
 import Layout from "../components/layout"
@@ -189,10 +190,9 @@ const QuoteForm = ({ onClick, data }) => {
                 <div className="mx-3 flex flex-col">
                   {data.map(m => (
                     <div class="inline-flex items-center mt-3">
-                      <label htmlFor={m.name}>
+                      <label>
                         <input
                           type="checkbox"
-                          id={m.name}
                           name={m.name}
                           className="form-checkbox h-5 w-5 text-custom-yellow focus:outline-none"
                         />

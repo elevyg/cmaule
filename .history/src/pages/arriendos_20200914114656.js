@@ -192,7 +192,7 @@ const QuoteForm = ({ onClick, data }) => {
                       <label htmlFor={m.name}>
                         <input
                           type="checkbox"
-                          id={m.name}
+                          id={m.id}
                           name={m.name}
                           className="form-checkbox h-5 w-5 text-custom-yellow focus:outline-none"
                         />

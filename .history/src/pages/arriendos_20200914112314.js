@@ -1,4 +1,3 @@
-/* eslint jsx-a11y/control-has-associated-label: off */
 import React, { useState } from "react"
 
 import Layout from "../components/layout"
@@ -187,19 +186,18 @@ const QuoteForm = ({ onClick, data }) => {
                   </div>
                 </div>
                 <div className="mx-3 flex flex-col">
-                  {data.map(m => (
-                    <div class="inline-flex items-center mt-3">
-                      <label htmlFor={m.name}>
-                        <input
-                          type="checkbox"
-                          id={m.name}
-                          name={m.name}
-                          className="form-checkbox h-5 w-5 text-custom-yellow focus:outline-none"
-                        />
-
-                        <span class="ml-2 ">{m.name}</span>
-                      </label>
-                    </div>
+                  {data.map((m, index) => (
+                    <label
+                      htmlFor={`machine`}
+                      class="inline-flex items-center mt-3"
+                    >
+                      <input
+                        type="checkbox"
+                        id="machine"
+                        className="form-checkbox h-5 w-5 text-custom-yellow focus:outline-none"
+                      />
+                      <span class="ml-2 ">{m.name}</span>
+                    </label>
                   ))}
                 </div>
               </div>
