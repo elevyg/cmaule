@@ -69,5 +69,5 @@ html {
 }
 
 .vertical-timeline.vertical-timeline-custom-line::before {
-  @apply bg-custom-gray;
+  background: #424242;
 }

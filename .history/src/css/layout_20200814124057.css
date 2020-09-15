@@ -67,7 +67,3 @@ html {
 #index * {
   z-index: 10;
 }
-
-.vertical-timeline.vertical-timeline-custom-line::before {
-  @apply bg-custom-gray;
-}

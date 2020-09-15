@@ -32,7 +32,7 @@ const Obras = () => (
         >
           <h1 className="text-black">Obra 1</h1>
           <h3 className="text-black text-3xl">Cliente</h3>
-          <p className="text-gray-800">
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             culpa molestiae omnis, officiis sequi ullam totam veritatis nam
             error libero?

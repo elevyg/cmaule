@@ -17,22 +17,18 @@ const Obras = () => (
     </div>
 
     <div className="flex">
-      <VerticalTimeline className="vertical-timeline-custom-line">
+      <VerticalTimeline>
         <VerticalTimelineElement
-          contentStyle={{
-            backgroundColor: "white",
-            borderTopColor: "#1d3d82",
-            borderTopWidth: 5,
-          }}
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "#1d3d82", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #1d3d82" }}
           date={"23/05/1991"}
           dateClassName="text-black"
           iconStyle={{ background: "#1d3d82", color: "#fff" }}
-          textClassName="text-white"
         >
-          <h1 className="text-black">Obra 1</h1>
-          <h3 className="text-black text-3xl">Cliente</h3>
-          <p className="text-gray-800">
+          <h1>Obra 1</h1>
+          <h2 className="divide-custom-yellow">Cliente</h2>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             culpa molestiae omnis, officiis sequi ullam totam veritatis nam
             error libero?

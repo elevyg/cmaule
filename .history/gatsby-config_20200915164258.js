@@ -10,12 +10,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/data/json`,
-      },
-    },
+    ,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

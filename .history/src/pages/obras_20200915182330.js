@@ -30,9 +30,9 @@ const Obras = () => (
           iconStyle={{ background: "#1d3d82", color: "#fff" }}
           textClassName="text-white"
         >
-          <h1 className="text-black">Obra 1</h1>
-          <h3 className="text-black text-3xl">Cliente</h3>
-          <p className="text-gray-800">
+          <h1>Obra 1</h1>
+          <h2 className="text-white">Cliente</h2>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             culpa molestiae omnis, officiis sequi ullam totam veritatis nam
             error libero?

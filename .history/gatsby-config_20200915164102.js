@@ -6,16 +6,17 @@ module.exports = {
     author: `Eyal Levy`,
   },
   plugins: [
+    `gatsby-transformer-json`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
-    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data/json`,
+        path: `./src/data/`,
       },
     },
+    ,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

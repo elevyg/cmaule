@@ -1,0 +1,13 @@
+[
+  {
+    "cliente": "Municipalidad de Padre Hurtado",
+    "obra": "",
+    "monto": 123,
+    "unidad": "pesos",
+    "fechaInicio": "",
+    "fechaTermino": "",
+    "cantidadesDeObra": {
+      "soleras": ""
+    }
+  }
+]
