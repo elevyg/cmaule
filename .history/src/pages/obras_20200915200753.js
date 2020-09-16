@@ -45,7 +45,7 @@ const ObraTimelineElement = ({ obra }) => (
     iconStyle={{ background: "#1d3d82", color: "#fff" }}
     textClassName="text-white"
     icon={<FontAwesomeIcon icon={faHardHat} size="2x" />}
-    iconClassName="flex absolute top-0 left-0"
+    iconClassName="flex justify-center items-start"
   >
     <h1 className="text-black">{obra.cliente}</h1>
     <h3 className="text-black text-3xl">{obra.obra}</h3>

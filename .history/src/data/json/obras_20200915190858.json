@@ -1,0 +1,35 @@
+[
+  {
+    "cliente": "Municipalidad de Padre Hurtado",
+    "obra": "Mejoramiento Aceras Distintas Calles Padre Hurtado",
+    "ubicacion": "Comuna de Padre Hurtado",
+    "monto": 2889591635,
+    "unidad": "pesos",
+    "fechaInicio": "19/06/2019",
+    "fechaTermino": "29/05/2020",
+    "cantidadesDeObra": [
+      {
+        "nombre": "Suministro y colocación Soleras",
+        "cantidad": 9775,
+        "unidad": "ml"
+      },
+      [, , "ml"],
+      ["Acera Baldosa Microvibrada Relieve Pulida", 36167, "ml"],
+      ["Radier Acceso Vehicular", 8.336, "m2"]
+    ]
+  },
+  {
+    "cliente": "Municipalidad de Renca",
+    "obra": "Mejoramiento Camino Lo Ruiz",
+    "ubicacion": "Comuna de Renca",
+    "monto": 2223030671,
+    "unidad": "pesos",
+    "fechaInicio": "23/11/2017",
+    "fechaTermino": "15/01/2018",
+    "cantidadesDeObra": [
+      ["Suministro y colocación Soleras", 9775, "ml"],
+      ["Acera Baldosa Microvibrada Relieve Pulida", 36167, "ml"],
+      ["Radier Acceso Vehicular", 8.336, "m2"]
+    ]
+  }
+]

@@ -7,7 +7,6 @@
     "unidad": "pesos",
     "fechaInicio": "19/06/2019",
     "fechaTermino": "29/05/2020",
-    "tag": ["municipalidad"],
     "cantidadesDeObra": [
       {
         "nombre": "Suministro y colocación Soleras",
@@ -21,12 +20,9 @@
         "unidad": "m2",
         "tags": ["aceras"]
       },
-      {
-        "nombre": "Radier Acceso Vehicular",
-        "cantidad": 8336,
-        "unidad": "m2",
-        "tags": ["accesos_vehiculares"]
-      }
+
+      ["", , ""],
+      ["Radier Acceso Vehicular", 8.336, "m2"]
     ]
   },
   {
@@ -37,26 +33,10 @@
     "unidad": "pesos",
     "fechaInicio": "23/11/2017",
     "fechaTermino": "15/01/2018",
-    "tag": ["municipalidad"],
     "cantidadesDeObra": [
-      {
-        "nombre": "Excavaciones Exteriores",
-        "cantidad": 28366,
-        "unidad": "m3",
-        "tags": ["excavaciones"]
-      },
-      {
-        "nombre": "Rellenos compactado",
-        "cantidad": 15552,
-        "unidad": "m3",
-        "tags": ["rellenos"]
-      },
-      {
-        "nombre": " Pavimento Calzada Horm",
-        "cantidad": 15233,
-        "unidad": "m3",
-        "tags": ["pavimentación"]
-      }
+      ["Suministro y colocación Soleras", 9775, "ml"],
+      ["Acera Baldosa Microvibrada Relieve Pulida", 36167, "ml"],
+      ["Radier Acceso Vehicular", 8.336, "m2"]
     ]
   }
 ]

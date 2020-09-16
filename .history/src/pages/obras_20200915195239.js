@@ -1,5 +1,3 @@
-import { faCoffee, faHardHat } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 import {
   VerticalTimeline,
@@ -44,8 +42,6 @@ const ObraTimelineElement = ({ obra }) => (
     dateClassName="text-black"
     iconStyle={{ background: "#1d3d82", color: "#fff" }}
     textClassName="text-white"
-    icon={<FontAwesomeIcon icon={faHardHat} size="2x" />}
-    iconClassName="flex absolute top-0 left-0"
   >
     <h1 className="text-black">{obra.cliente}</h1>
     <h3 className="text-black text-3xl">{obra.obra}</h3>

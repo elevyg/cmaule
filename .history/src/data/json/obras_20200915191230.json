@@ -7,7 +7,6 @@
     "unidad": "pesos",
     "fechaInicio": "19/06/2019",
     "fechaTermino": "29/05/2020",
-    "tag": ["municipalidad"],
     "cantidadesDeObra": [
       {
         "nombre": "Suministro y colocación Soleras",
@@ -37,25 +36,18 @@
     "unidad": "pesos",
     "fechaInicio": "23/11/2017",
     "fechaTermino": "15/01/2018",
-    "tag": ["municipalidad"],
     "cantidadesDeObra": [
       {
         "nombre": "Excavaciones Exteriores",
         "cantidad": 28366,
         "unidad": "m3",
         "tags": ["excavaciones"]
-      },
+      }
       {
-        "nombre": "Rellenos compactado",
-        "cantidad": 15552,
+        "nombre": "Excavaciones Exteriores",
+        "cantidad": 28366,
         "unidad": "m3",
-        "tags": ["rellenos"]
-      },
-      {
-        "nombre": " Pavimento Calzada Horm",
-        "cantidad": 15233,
-        "unidad": "m3",
-        "tags": ["pavimentación"]
+        "tags": ["excavaciones"]
       }
     ]
   }

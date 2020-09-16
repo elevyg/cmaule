@@ -1,0 +1,16 @@
+[
+  {
+    "cliente": "Municipalidad de Padre Hurtado",
+    "obra": "Mejoramiento Aceras Distintas Calles",
+    "ubicacion": "Padre Hurtado, Comuna de Padre Hurtado",
+    "monto": 2889591635,
+    "unidad": "pesos",
+    "fechaInicio": "",
+    "fechaTermino": "",
+    "cantidadesDeObra": [
+      ["Suministro y colocación Soleras", 9775, "ml"],
+      ["Acera Baldosa Microvibrada Relieve Pulida", 36167, "ml"],
+      ["Radier Acceso Vehicular", 8.336, "m2"]
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "cliente": "Municipalidad de Padre Hurtado",
+    "obra": "",
+    "monto": 123,
+    "unidad": "pesos",
+    "fechaInicio": "",
+    "fechaTermino": "",
+    "cantidadesDeObra": [
+      ["Suministro y colocación Soleras", 9775, "ml"],
+      ["Acera Baldosa Microvibrada Relieve Pulida", "36.167", "ml"],
+      ["Radier Acceso Vehicular", "8.336 m2"]
+    ]
+  }
+]
