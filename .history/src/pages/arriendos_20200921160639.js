@@ -51,7 +51,7 @@ const Arriendos = ({ data }) => {
         Valor arriendo camiones base Santiago, con operador y mantenimiento, sin
         petróleo.
         <span className="font-bold"> Período: 30 días mínimo.</span> Jornada de
-        trabajo horario normal.{" "}
+        trabajo horario normal .{" "}
       </p>
       <SingleItemCard
         image={data.camiones.childImageSharp.fluid}

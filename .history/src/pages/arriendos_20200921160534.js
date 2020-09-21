@@ -48,10 +48,13 @@ const Arriendos = ({ data }) => {
         <SectionHeader>Camiones</SectionHeader>
       </TitleAndQuote>
       <p className="mx-5">
-        Valor arriendo camiones base Santiago, con operador y mantenimiento, sin
-        petróleo.
-        <span className="font-bold"> Período: 30 días mínimo.</span> Jornada de
-        trabajo horario normal.{" "}
+        Arriendo camiones base Santiago, con operador y mantenimiento, sin
+        petróleo,
+        <span className="font-bold">
+          {" "}
+          período mínimo de arriendo: 1 mes & 30 días.
+        </span>{" "}
+        jornada normal de trabajo.{" "}
       </p>
       <SingleItemCard
         image={data.camiones.childImageSharp.fluid}

@@ -6,6 +6,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component"
+import { motion } from "framer-motion"
 import "react-vertical-timeline-component/style.min.css"
 
 import Layout from "../components/layout"
@@ -54,9 +55,8 @@ const Obras = ({ data }) => {
 
 const ObraTimelineElement = ({ obra, onClick }) => {
   return (
-    // Info de que los montos son de las época en pie de página.
     <>
-      <VerticalTimelineElement
+      <motion.VerticalTimelineElement
         contentStyle={{
           backgroundColor: "white",
           borderTopColor: "#1d3d82",
@@ -81,7 +81,7 @@ const ObraTimelineElement = ({ obra, onClick }) => {
         <h4 className="text-custom-yellow">{`Monto: $${new Intl.NumberFormat(
           "es-ES"
         ).format(obra.monto)}`}</h4>
-      </VerticalTimelineElement>
+      </motion.VerticalTimelineElement>
     </>
   )
 }

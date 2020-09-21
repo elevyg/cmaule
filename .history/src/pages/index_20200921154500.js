@@ -1,5 +1,6 @@
 import React from "react"
 import { Fade, Flip } from "react-awesome-reveal"
+import { motion } from "framer-motion"
 import "../css/layout.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAward, faUsers, faHardHat } from "@fortawesome/free-solid-svg-icons"
@@ -38,7 +39,6 @@ const Hero = () => {
 
 const WordsContainer = () => {
   return (
-    // <h2>Una empresa constructora</h2>
     <Fade direction="bottom" duration={3000}>
       <div
         id="valores"

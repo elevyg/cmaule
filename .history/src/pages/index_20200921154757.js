@@ -38,7 +38,7 @@ const Hero = () => {
 
 const WordsContainer = () => {
   return (
-    // <h2>Una empresa constructora</h2>
+    <h2>Una empresa constructora</h2>
     <Fade direction="bottom" duration={3000}>
       <div
         id="valores"

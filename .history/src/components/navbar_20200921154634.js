@@ -65,12 +65,13 @@ const Logo = () => (
   </>
 )
 
-const LinkList = () => {
+const LinkList = ({ page }) => {
   return (
     <div className="flex items-center">
-      <Link to="/quienes-somos" className="hover:text-gray-500 mx-3 text-white">
+      {/* <Link to="/quienes-somos" className="hover:text-gray-500 mx-3">
         Quines Somos
-      </Link>
+      </Link> */}
+
       <Link to="/obras" className="hover:text-gray-500 mx-3 text-white ">
         Obras
       </Link>

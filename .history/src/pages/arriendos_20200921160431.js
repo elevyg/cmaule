@@ -38,20 +38,23 @@ const Arriendos = ({ data }) => {
         />
       )}
       <p class="ml-5">
-        Valor arriendo maquinaria base Santiago, con operador y mantenimiento,
-        sin petróleo.{" "}
+        Arriendo maquinaria base Santiago, con operador y mantenimiento, sin
+        petróleo.{" "}
         <span className="font-bold"> Período: 1 mes & 180 horas mínimo; </span>{" "}
-        Jornada de trabajo horario normal.
+        jornada normal de trabajo.
       </p>
       <MachineryGird item={machinery} />
       <TitleAndQuote onClick={handleOnClick}>
         <SectionHeader>Camiones</SectionHeader>
       </TitleAndQuote>
       <p className="mx-5">
-        Valor arriendo camiones base Santiago, con operador y mantenimiento, sin
-        petróleo.
-        <span className="font-bold"> Período: 30 días mínimo.</span> Jornada de
-        trabajo horario normal.{" "}
+        Arriendo camiones base Santiago, con operador y mantenimiento, sin
+        petróleo,
+        <span className="font-bold">
+          {" "}
+          período mínimo de arriendo: 1 mes & 30 días.
+        </span>{" "}
+        jornada normal de trabajo.{" "}
       </p>
       <SingleItemCard
         image={data.camiones.childImageSharp.fluid}

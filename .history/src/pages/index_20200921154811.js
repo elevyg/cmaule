@@ -38,41 +38,43 @@ const Hero = () => {
 
 const WordsContainer = () => {
   return (
-    // <h2>Una empresa constructora</h2>
-    <Fade direction="bottom" duration={3000}>
-      <div
-        id="valores"
-        className="flex flex-col md:flex-row justify-evenly items-center py-5 w-full flex-grow-0 "
-      >
-        <Valores
-          className=" text-center md:flex md:flex-col justify-center md:text-left md:items-end "
-          valores={[
-            "Estanques",
-            "Plantas de tratamiento",
-            "Redes de alcantarillado",
-            "Recolectores de aguas",
-            "Alumbrados públicos",
-          ]}
-        />
+    <>
+      <h2>Una empresa constructora</h2>
+      <Fade direction="bottom" duration={3000}>
+        <div
+          id="valores"
+          className="flex flex-col md:flex-row justify-evenly items-center py-5 w-full flex-grow-0 "
+        >
+          <Valores
+            className=" text-center md:flex md:flex-col justify-center md:text-left md:items-end "
+            valores={[
+              "Estanques",
+              "Plantas de tratamiento",
+              "Redes de alcantarillado",
+              "Recolectores de aguas",
+              "Alumbrados públicos",
+            ]}
+          />
 
-        <img
-          src={require("../images/engineers discussion.jpg")}
-          alt="people"
-          className="flex-grow-0 cover max-w-xs lg:max-w-2xl"
-        />
+          <img
+            src={require("../images/engineers discussion.jpg")}
+            alt="people"
+            className="flex-grow-0 cover max-w-xs lg:max-w-2xl"
+          />
 
-        <Valores
-          className="  text-center md:flex md:flex-col justify-center md:text-right md:items-start"
-          valores={[
-            "Puentes",
-            "Ciclovias",
-            "Pasos sobrenivel",
-            "Pavimentación en Hormigón",
-            "Pavimentación en Asfalto",
-          ]}
-        />
-      </div>
-    </Fade>
+          <Valores
+            className="  text-center md:flex md:flex-col justify-center md:text-right md:items-start"
+            valores={[
+              "Puentes",
+              "Ciclovias",
+              "Pasos sobrenivel",
+              "Pavimentación en Hormigón",
+              "Pavimentación en Asfalto",
+            ]}
+          />
+        </div>
+      </Fade>
+    </>
   )
 }
 

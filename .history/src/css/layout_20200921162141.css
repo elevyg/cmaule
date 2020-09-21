@@ -73,7 +73,7 @@ html {
 }
 
 .vertical-timeline-element-content:hover {
-  opacity: 80%;
+  color: auto;
 }
 
 .vertical-timeline.vertical-timeline-custom-line::before {

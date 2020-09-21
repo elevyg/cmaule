@@ -72,10 +72,6 @@ html {
   color: auto;
 }
 
-.vertical-timeline-element-content:hover {
-  opacity: 80%;
-}
-
 .vertical-timeline.vertical-timeline-custom-line::before {
   @apply bg-custom-gray;
 }
