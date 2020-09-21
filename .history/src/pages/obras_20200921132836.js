@@ -1,5 +1,4 @@
 import { faHardHat } from "@fortawesome/free-solid-svg-icons"
-import { graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { useEffect, useState } from "react"
 import {
@@ -17,18 +16,17 @@ const Obras = ({ data }) => {
   const obras = data.allObrasJson.edges
   const [toggle, setToggle] = useState(false)
   const [selectedObra, setSelectedObra] = useState()
-  const [obraId, setObraId] = useState()
-
+  // const [obraId, setObraId] = useState()
   const onObraClickHandle = (toggleState, obraId) => {
     setToggle(toggleState)
-    setObraId(obraId)
+    setSelectedObra(obras.find(obra => obra.id === obraId))
   }
-  useEffect(() => {
-    setSelectedObra(obras.find(obra => obra.node.id === obraId))
-    return () => {
-      setSelectedObra(null)
-    }
-  }, [toggle, obraId, obras])
+  // useEffect(() => {
+  //   setSelectedObra(obras.find(obra => obra.id === obraId))
+  //   // return () => {
+  //   //   setSelectedObra(null)
+  //   // }
+  // }, [setSelectedObra, obras, obraId, toggle])
   return (
     <Layout>
       <SEO title="Obras" />
@@ -89,7 +87,7 @@ const ObraModal = ({ onClick, obra }) => {
   return (
     <Modal>
       <div className="flex justify-center items-center overflow-y-hidden  bg-white ">
-        {obra && <h1>{obra.node.obra}</h1>}
+        {obra && <h1>Hola {obra.id}</h1>}
         <button onClick={() => onClick(false)}>Cerrar</button>
       </div>
     </Modal>

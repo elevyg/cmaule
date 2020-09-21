@@ -1,5 +1,4 @@
 import { faHardHat } from "@fortawesome/free-solid-svg-icons"
-import { graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { useEffect, useState } from "react"
 import {
@@ -25,10 +24,10 @@ const Obras = ({ data }) => {
   }
   useEffect(() => {
     setSelectedObra(obras.find(obra => obra.node.id === obraId))
-    return () => {
-      setSelectedObra(null)
-    }
-  }, [toggle, obraId, obras])
+    // return () => {
+    //   setSelectedObra(null)
+    // }
+  }, [setSelectedObra, obras, obraId, toggle])
   return (
     <Layout>
       <SEO title="Obras" />
@@ -86,10 +85,12 @@ const ObraTimelineElement = ({ obra, onClick }) => {
 }
 
 const ObraModal = ({ onClick, obra }) => {
+  const [thisObra, setThisObra] = useState(obra)
+  useEffect(obra && setThisObra(obra), [])
   return (
     <Modal>
       <div className="flex justify-center items-center overflow-y-hidden  bg-white ">
-        {obra && <h1>{obra.node.obra}</h1>}
+        {thisObra && <h1>Hola {thisObra.node.id}</h1>}
         <button onClick={() => onClick(false)}>Cerrar</button>
       </div>
     </Modal>

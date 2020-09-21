@@ -211,55 +211,25 @@
     "unidad": "pesos",
     "fechaInicio": "12/02/2013",
     "fechaTermino": "27/12/2013",
-    "tag": ["Serviu"],
+    "tag": ["MOP"],
     "cantidadesDeObra": [
       {
-        "nombre": "Pavimentos de Asfalto e=7 cm y Binder e= 9cm",
-        "cantidad": 27791,
+        "nombre": "Pavimentos de Hormigón e=21 cm",
+        "cantidad": 10510,
         "unidad": "m2",
-        "tags": ["asfalto", "caminos"]
+        "tags": ["hormigón", "caminos"]
       },
       {
-        "nombre": "Puentes de Viga de Hormigón Armado 29 ml",
-        "cantidad": 2,
-        "unidad": "puentes",
-        "tags": ["puentes"]
-      },
-      {
-        "nombre": "Tubería Hormigón Alta Resistencia D= 600mm",
-        "cantidad": 1057,
+        "nombre": "Túnel Liner (D=1200 mm y D=1600 mm)",
+        "cantidad": 780,
         "unidad": "ml",
         "tags": ["tubería", "agua"]
-      }
-    ]
-  },
-  {
-    "cliente": "Serviu Región de Tarapacá",
-    "obra": "Macrourbanización Puerto Seco",
-    "ubicacion": "Calama",
-    "monto": 2592574246,
-    "unidad": "pesos",
-    "fechaInicio": "29/03/2012",
-    "fechaTermino": "22/05/2013",
-    "tag": ["Serviu"],
-    "cantidadesDeObra": [
-      {
-        "nombre": "Pavimentos de Asfalto e=6 cm y Binder e= 5cm",
-        "cantidad": 49780,
-        "unidad": "m2",
-        "tags": ["asfalto", "caminos"]
       },
       {
-        "nombre": "Aceras de Hormigón e=7cm",
-        "cantidad": 18119,
-        "unidad": "m2",
-        "tags": ["veredas"]
-      },
-      {
-        "nombre": "Excavación",
-        "cantidad": 30974,
-        "unidad": "m3",
-        "tags": ["excavación"]
+        "nombre": "Tubería Hormigón D=800mm",
+        "cantidad": 3545,
+        "unidad": "ml",
+        "tags": ["tubería", "agua"]
       }
     ]
   }

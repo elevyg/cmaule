@@ -1,7 +1,6 @@
 import { faHardHat } from "@fortawesome/free-solid-svg-icons"
-import { graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -11,47 +10,34 @@ import "react-vertical-timeline-component/style.min.css"
 import Layout from "../components/layout"
 import Modal from "../components/modal"
 import SEO from "../components/seo"
-// import { COLORES } from "../constants/colors"
 
 const Obras = ({ data }) => {
   const obras = data.allObrasJson.edges
-  const [toggle, setToggle] = useState(false)
-  const [selectedObra, setSelectedObra] = useState()
-  const [obraId, setObraId] = useState()
 
-  const onObraClickHandle = (toggleState, obraId) => {
-    setToggle(toggleState)
-    setObraId(obraId)
-  }
-  useEffect(() => {
-    setSelectedObra(obras.find(obra => obra.node.id === obraId))
-    return () => {
-      setSelectedObra(null)
-    }
-  }, [toggle, obraId, obras])
   return (
     <Layout>
       <SEO title="Obras" />
+
       <div className="flex justify-center items-end h-64 bg-custom-gray">
         <h1 className="text-4xl text-white mb-5">Obras</h1>
       </div>
+
       <div className="flex">
         <VerticalTimeline className="vertical-timeline-custom-line">
           {obras.map(obra => (
-            <ObraTimelineElement
-              key={obra.node.id}
-              obra={obra.node}
-              onClick={onObraClickHandle}
-            />
+            <ObraTimelineElement key={obra.node.id} obra={obra.node} />
           ))}
         </VerticalTimeline>
       </div>
-      {toggle && <ObraModal onClick={onObraClickHandle} obra={selectedObra} />}
     </Layout>
   )
 }
 
-const ObraTimelineElement = ({ obra, onClick }) => {
+const ObraTimelineElement = ({ obra }) => {
+  const [toggle, setToggle] = useState(true)
+  const onObraClickHandle = () => {
+    setToggle(true)
+  }
   return (
     <>
       <VerticalTimelineElement
@@ -69,30 +55,30 @@ const ObraTimelineElement = ({ obra, onClick }) => {
           <FontAwesomeIcon
             icon={faHardHat}
             size="2x"
-            class="justify-center items-center"
+            className="justify-center items-center"
           />
         }
         iconClassName="flex"
-        onTimelineElementClick={() => onClick(true, obra.id)}
+        onTimelineElementClick={onObraClickHandle}
       >
         <h1 className="text-black">{obra.cliente}</h1>
         <h3 className="text-black text-3xl">{obra.obra}</h3>
         <h4 className="text-custom-yellow">{`Monto: $${new Intl.NumberFormat(
           "es-ES"
         ).format(obra.monto)}`}</h4>
+        <button onClick={() => setToggle(true)}>
+          <span className="text-gray-600">Ver más</span>
+        </button>
       </VerticalTimelineElement>
+      {toggle && (
+        <Modal>
+          <div className="flex justify-center items-center overflow-y-hidden  ">
+            <h1>Hola</h1>
+            <button onClick={setToggle(false)}>Cerrar</button>
+          </div>
+        </Modal>
+      )}
     </>
-  )
-}
-
-const ObraModal = ({ onClick, obra }) => {
-  return (
-    <Modal>
-      <div className="flex justify-center items-center overflow-y-hidden  bg-white ">
-        {obra && <h1>{obra.node.obra}</h1>}
-        <button onClick={() => onClick(false)}>Cerrar</button>
-      </div>
-    </Modal>
   )
 }
 

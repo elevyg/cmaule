@@ -1,7 +1,6 @@
 import { faHardHat } from "@fortawesome/free-solid-svg-icons"
-import { graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -17,18 +16,10 @@ const Obras = ({ data }) => {
   const obras = data.allObrasJson.edges
   const [toggle, setToggle] = useState(false)
   const [selectedObra, setSelectedObra] = useState()
-  const [obraId, setObraId] = useState()
-
   const onObraClickHandle = (toggleState, obraId) => {
     setToggle(toggleState)
-    setObraId(obraId)
+    setSelectedObra(obras.find(obra => obra.id === obraId))
   }
-  useEffect(() => {
-    setSelectedObra(obras.find(obra => obra.node.id === obraId))
-    return () => {
-      setSelectedObra(null)
-    }
-  }, [toggle, obraId, obras])
   return (
     <Layout>
       <SEO title="Obras" />
@@ -85,16 +76,17 @@ const ObraTimelineElement = ({ obra, onClick }) => {
   )
 }
 
-const ObraModal = ({ onClick, obra }) => {
-  return (
-    <Modal>
-      <div className="flex justify-center items-center overflow-y-hidden  bg-white ">
-        {obra && <h1>{obra.node.obra}</h1>}
-        <button onClick={() => onClick(false)}>Cerrar</button>
-      </div>
-    </Modal>
-  )
-}
+const ObraModal = ({ onClick, obra }) => (
+  if(obra) {
+    return <Modal>
+    <div className="flex justify-center items-center overflow-y-hidden  bg-white ">
+      <h1>Hola</h1>
+      <button onClick={() => onClick(false)}>Cerrar</button>
+    </div>
+  </Modal>
+  }
+  
+)
 
 export const query = graphql`
   {

@@ -1,0 +1,110 @@
+[
+  {
+    "cliente": "Municipalidad de Padre Hurtado",
+    "obra": "Mejoramiento Aceras Distintas Calles Padre Hurtado",
+    "ubicacion": "Comuna de Padre Hurtado",
+    "monto": 2889591635,
+    "unidad": "pesos",
+    "fechaInicio": "19/06/2019",
+    "fechaTermino": "29/05/2020",
+    "tag": ["municipalidad"],
+    "cantidadesDeObra": [
+      {
+        "nombre": "Suministro y colocación Soleras",
+        "cantidad": 9775,
+        "unidad": "ml",
+        "tags": ["soleras"]
+      },
+      {
+        "nombre": "Acera Baldosa Microvibrada Relieve Pulida",
+        "cantidad": 36167,
+        "unidad": "m2",
+        "tags": ["aceras"]
+      },
+      {
+        "nombre": "Radier Acceso Vehicular",
+        "cantidad": 8336,
+        "unidad": "m2",
+        "tags": ["accesos_vehiculares"]
+      }
+    ]
+  },
+  {
+    "cliente": "Municipalidad de Renca",
+    "obra": "Mejoramiento Camino Lo Ruiz",
+    "ubicacion": "Comuna de Renca",
+    "monto": 2223030671,
+    "unidad": "pesos",
+    "fechaInicio": "23/11/2017",
+    "fechaTermino": "15/01/2018",
+    "tag": ["municipalidad"],
+    "cantidadesDeObra": [
+      {
+        "nombre": "Excavaciones Exteriores",
+        "cantidad": 28366,
+        "unidad": "m3",
+        "tags": ["excavaciones"]
+      },
+      {
+        "nombre": "Rellenos compactado",
+        "cantidad": 15552,
+        "unidad": "m3",
+        "tags": ["rellenos"]
+      },
+      {
+        "nombre": " Pavimento Calzada Horm",
+        "cantidad": 15233,
+        "unidad": "m3",
+        "tags": ["pavimentación"]
+      }
+    ]
+  },
+  {
+    "cliente": "Municipalidad de Padre Hurtado",
+    "obra": "Construcción Red de Agua Potable y Aguas Servidas San Ignacio Comuna de Padre Hurtado. Etapa III",
+    "ubicacion": "Comuna de Padre Hurtado",
+    "monto": 2364500000,
+    "unidad": "pesos",
+    "fechaInicio": "14/07/2017",
+    "fechaTermino": "09/05/2018",
+    "tag": ["municipalidad"],
+    "cantidadesDeObra": [
+      {
+        "nombre": "Aguas Servidas",
+        "cantidad": 9805,
+        "unidad": "ml",
+        "tags": ["tubería", "agua"]
+      },
+      {
+        "nombre": " Agua Potable",
+        "cantidad": 9925,
+        "unidad": "ml",
+        "tags": ["tubería", "agua"]
+      }
+    ]
+  },
+  {
+    "cliente": "Municipalidad de Padre Hurtado",
+    "obra": "Construcción Red de Agua Potable y Aguas Servidas San Ignacio Comuna de Padre Hurtado. Etapa II",
+    "ubicacion": "Comuna de Padre Hurtado",
+    "monto": 6464919860,
+    "unidad": "pesos",
+    "fechaInicio": "22/06/2015	",
+    "fechaTermino": "09/05/2018",
+    "tag": ["municipalidad"],
+    "cantidadesDeObra": [
+      {
+        "nombre": "Aguas Servidas",
+        "cantidad": 9805,
+        "unidad": "ml",
+        "tags": ["tubería", "agua"]
+      },
+      {
+        "nombre": " Agua Potable",
+        "cantidad": 9925,
+        "unidad": "ml",
+        "tags": ["tubería", "agua"]
+      }
+    ]
+  }
+]

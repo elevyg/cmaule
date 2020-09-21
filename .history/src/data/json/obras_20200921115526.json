@@ -244,22 +244,22 @@
     "tag": ["Serviu"],
     "cantidadesDeObra": [
       {
-        "nombre": "Pavimentos de Asfalto e=6 cm y Binder e= 5cm",
-        "cantidad": 49780,
+        "nombre": "Pavimentos de Asfalto e=7 cm y Binder e= 9cm",
+        "cantidad": 27791,
         "unidad": "m2",
         "tags": ["asfalto", "caminos"]
       },
       {
-        "nombre": "Aceras de Hormigón e=7cm",
-        "cantidad": 18119,
-        "unidad": "m2",
-        "tags": ["veredas"]
+        "nombre": "Puentes de Viga de Hormigón Armado 29 ml",
+        "cantidad": 2,
+        "unidad": "puentes",
+        "tags": ["puentes"]
       },
       {
-        "nombre": "Excavación",
-        "cantidad": 30974,
-        "unidad": "m3",
-        "tags": ["excavación"]
+        "nombre": "Tubería Hormigón Alta Resistencia D= 600mm",
+        "cantidad": 1057,
+        "unidad": "ml",
+        "tags": ["tubería", "agua"]
       }
     ]
   }
