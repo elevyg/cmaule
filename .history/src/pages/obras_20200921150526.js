@@ -89,7 +89,7 @@ const ObraModal = ({ onClick, obra }) => {
   if (obra) {
     return (
       <Modal>
-        <div className="flex flex-col justify-start items-center overflow-y-hidden bg-white rounded-md px-3 py-3 border-t-8 border-custom-blue borde">
+        <div className="flex flex-col justify-center items-center overflow-y-hidden bg-white rounded-md px-2 py-5">
           <div>
             <button
               onClick={() => onClick(false)}
@@ -100,21 +100,11 @@ const ObraModal = ({ onClick, obra }) => {
           </div>
           <div className="mt-4">
             <h3 className="text-2xl">{obra.node.obra}</h3>
-            <p className="text-lg text-custom-blue mt-2">Cantidades de Obra:</p>
             <ul>
               {obra.node.cantidadesDeObra.map(c => (
-                <li>
-                  {c.nombre}:{" "}
-                  <span className="text-xl text-custom-yellow">
-                    {new Intl.NumberFormat("es-ES").format(c.cantidad)}
-                  </span>{" "}
-                  {c.unidad}
-                </li>
+                <li>{c.nombre}</li>
               ))}
             </ul>
-            <p className="text-lg text-custom-blue mt-2">Plazos:</p>
-            <p>{`Fecha de Inicio: ${obra.node.fechaInicio}`}</p>
-            <p>{`Fecha de Término: ${obra.node.fechaTermino}`}</p>
           </div>
         </div>
       </Modal>

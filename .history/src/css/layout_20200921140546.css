@@ -72,8 +72,10 @@ html {
   @apply bg-custom-gray;
 }
 
+
+}
 .vertical-timeline-element-icon svg {
-  display: block;
-  width: 24px;
-  height: 24px;
+    display: block;
+    width: 24px;
+    height: 24px;
 }

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react"
+import { faHardHat } from "@fortawesome/free-solid-svg-icons"
 import { graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHardHat, faTimes } from "@fortawesome/free-solid-svg-icons"
+import React, { useEffect, useState } from "react"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -89,32 +89,22 @@ const ObraModal = ({ onClick, obra }) => {
   if (obra) {
     return (
       <Modal>
-        <div className="flex flex-col justify-start items-center overflow-y-hidden bg-white rounded-md px-3 py-3 border-t-8 border-custom-blue borde">
+        <div className="flex flex-col justify-center items-center overflow-y-hidden bg-white rounded-md px-2 py-5">
           <div>
             <button
               onClick={() => onClick(false)}
-              className="absolute top-0 right-0 mr-5 mt-3 focus:shadow-outline focus:outline-none text-gray-500"
+              className="absolute inset-auto"
             >
-              <FontAwesomeIcon icon={faTimes} size="lg" />
+              X
             </button>
           </div>
           <div className="mt-4">
             <h3 className="text-2xl">{obra.node.obra}</h3>
-            <p className="text-lg text-custom-blue mt-2">Cantidades de Obra:</p>
             <ul>
               {obra.node.cantidadesDeObra.map(c => (
-                <li>
-                  {c.nombre}:{" "}
-                  <span className="text-xl text-custom-yellow">
-                    {new Intl.NumberFormat("es-ES").format(c.cantidad)}
-                  </span>{" "}
-                  {c.unidad}
-                </li>
+                <li>{c.nombre}</li>
               ))}
             </ul>
-            <p className="text-lg text-custom-blue mt-2">Plazos:</p>
-            <p>{`Fecha de Inicio: ${obra.node.fechaInicio}`}</p>
-            <p>{`Fecha de Término: ${obra.node.fechaTermino}`}</p>
           </div>
         </div>
       </Modal>

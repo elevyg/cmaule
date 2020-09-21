@@ -89,7 +89,7 @@ const ObraModal = ({ onClick, obra }) => {
   if (obra) {
     return (
       <Modal>
-        <div className="flex flex-col justify-start items-center overflow-y-hidden bg-white rounded-md px-3 py-3 border-t-8 border-custom-blue borde">
+        <div className="flex flex-col justify-start items-center overflow-y-hidden bg-white rounded-md px-3 py-3">
           <div>
             <button
               onClick={() => onClick(false)}

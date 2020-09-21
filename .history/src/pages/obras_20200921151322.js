@@ -89,7 +89,7 @@ const ObraModal = ({ onClick, obra }) => {
   if (obra) {
     return (
       <Modal>
-        <div className="flex flex-col justify-start items-center overflow-y-hidden bg-white rounded-md px-3 py-3 border-t-8 border-custom-blue borde">
+        <div className="flex flex-col justify-start items-center overflow-y-hidden bg-white rounded-md px-3 py-3">
           <div>
             <button
               onClick={() => onClick(false)}
@@ -113,8 +113,6 @@ const ObraModal = ({ onClick, obra }) => {
               ))}
             </ul>
             <p className="text-lg text-custom-blue mt-2">Plazos:</p>
-            <p>{`Fecha de Inicio: ${obra.node.fechaInicio}`}</p>
-            <p>{`Fecha de Término: ${obra.node.fechaTermino}`}</p>
           </div>
         </div>
       </Modal>
