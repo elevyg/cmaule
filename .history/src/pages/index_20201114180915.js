@@ -27,11 +27,9 @@ const Hero = () => {
     <Flip direction="vertical" duration={1000} triggerOnce>
       <div id="index" className=" flex justify-center items-center flex-col ">
         <Fade direction="vertical" triggerOnce delay={500}>
-          <h2 className=" text-center text-xl md:text-6xl text-white font-bold">
-            1990 - {new Date().getFullYear()}
-          </h2>
+          <h2 className=" text-center text-xl md:text-6xl text-white font-bold">1990 - 2020</h2>
           <h1 className=" text-center text-4xl md:text-6xl text-white font-bold">
-            {new Date().getFullYear() - 1990} años de exitoso cumplimiento
+            30 años de exitoso cumplimiento
           </h1>
         </Fade>
       </div>

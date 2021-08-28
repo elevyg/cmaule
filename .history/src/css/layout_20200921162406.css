@@ -73,8 +73,8 @@ html {
 }
 
 .vertical-timeline-element-content:hover {
-  opacity: 75%;
-  color: #fcb501;
+  opacity: 80%;
+  @apply bg-gray-300;
 }
 
 .vertical-timeline.vertical-timeline-custom-line::before {

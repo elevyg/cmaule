@@ -96,11 +96,11 @@ const ObraModal = ({ onClick, obra }) => {
               <FontAwesomeIcon icon={faTimes} size="lg" />
             </button>
           </div>
-          <div className="flex flex-col mt-4">
+          <div className="mt-4">
             <h3 className="text-2xl">{obra.node.obra}</h3>
             <h4 className="text-custom-yellow">{`Monto: $${new Intl.NumberFormat(
               "es-ES"
-            ).format(obra.node.monto)}*`}</h4>
+            ).format(obra.node.monto)}`}</h4>
             <p className="text-lg text-custom-blue mt-2">Cantidades de Obra:</p>
             <ul>
               {obra.node.cantidadesDeObra.map(c => (
@@ -116,10 +116,8 @@ const ObraModal = ({ onClick, obra }) => {
             <p className="text-lg text-custom-blue mt-2">Plazos:</p>
             <p>{`Fecha de Inicio: ${obra.node.fechaInicio}`}</p>
             <p>{`Fecha de Término: ${obra.node.fechaTermino}`}</p>
-            <p className="text-sm self-end text-gray-500">
-              * Montos relativos al periodo de la obra
-            </p>
           </div>
+          <p className="text-sm">*</p>
         </div>
       </Modal>
     )

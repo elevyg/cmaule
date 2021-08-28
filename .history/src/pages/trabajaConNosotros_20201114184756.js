@@ -14,14 +14,11 @@ const TrabajaConNosotros = () => (
       <h1 className="text-5xl font-hairline text-custom-gray">
         Buscamos profesionales comprometidos
       </h1>
-      <h2 className="text-3xl font-hairline text-custom-gray mb-4">
+      <h2 className="text-3xl font-hairline text-custom-gray">
        Ingenieros civiles, constructores civiles con vocación por las obras de ingeniería.
       </h2>
-      <ul className="list-disc text-left">
-        <li> Ingenier@ encargado del estudio de propuestas; elaboración de presupuesto y presentación de ofertas - Full time - Experiencia acreditable - Presencial</li>
-      <li>Profesional experto en cubicación con Autocad- Full Time - Experiencia acreditable </li>
-      </ul>
-      <p>Agregar formulario ¿Por qué quieres trabajar en Constructora Mauricio Levy?</p>
+      <ul>Ingenier@ encargado del estudio de propuestas; elaboración de presupuesto y presentación de ofertas - Full time - Experiencia acreditable - Presencial</ul>
+      <p>Profesional experto en cubicación con Autocad, experiencia acreditable - Full Time</p>
     </div>
   </Layout>
 )

@@ -20,8 +20,8 @@ const TrabajaConNosotros = () => (
       <ul className="list-disc text-left">
         <li> Ingenier@ encargado del estudio de propuestas; elaboración de presupuesto y presentación de ofertas - Full time - Experiencia acreditable - Presencial</li>
       <li>Profesional experto en cubicación con Autocad- Full Time - Experiencia acreditable </li>
+      <li> </li>
       </ul>
-      <p>Agregar formulario ¿Por qué quieres trabajar en Constructora Mauricio Levy?</p>
     </div>
   </Layout>
 )

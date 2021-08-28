@@ -96,7 +96,7 @@ const ObraModal = ({ onClick, obra }) => {
               <FontAwesomeIcon icon={faTimes} size="lg" />
             </button>
           </div>
-          <div className="flex flex-col mt-4">
+          <div className=" flex mt-4">
             <h3 className="text-2xl">{obra.node.obra}</h3>
             <h4 className="text-custom-yellow">{`Monto: $${new Intl.NumberFormat(
               "es-ES"
