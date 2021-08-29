@@ -19,7 +19,7 @@ const PositionForm = ({ onClose, position }) => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <div>
-                    <label htmlFor="nombre">Cargo</label>
+                    <label htmlFor="cargo">Cargo</label>
                     <StyledInput
                       type="text"
                       name="cargo"
@@ -30,11 +30,11 @@ const PositionForm = ({ onClose, position }) => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="nombre">Profesión</label>
+                    <label htmlFor="prefesion">Profesión</label>
                     <StyledInput
                       type="text"
-                      name="nombre"
-                      id="nombre"
+                      name="prefesion"
+                      id="prefesion"
                       required
                     />
                   </div>
@@ -43,6 +43,7 @@ const PositionForm = ({ onClose, position }) => {
                     <StyledInput
                       type="text"
                       name="calificaciones"
+                      id="calificaciones"
                       style={{ height: "7rem" }}
                       required
                       textArea={true}
@@ -55,6 +56,7 @@ const PositionForm = ({ onClose, position }) => {
                     <StyledInput
                       type="text"
                       name="experiencia"
+                      id="experiencia"
                       style={{ height: "7rem" }}
                       required
                       textArea={true}
