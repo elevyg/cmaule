@@ -11,7 +11,8 @@ const PositionForm = ({ onClose, position }) => {
           <div>
             <form
               method="post"
-              action="https://www.flexyform.com/f/0afa15e71d42d75b565502b5986ce42559a3ffd2"
+              action="https://www.flexyform.com/f/e0b58d4d55c97a5a9b6a8ea95b1f0e34edb9e03f"
+              enctype="multipart/form-data"
             >
               <div className="flex justify-center mb-5 border-b-2 border-gray-300">
                 <h1 className="text-2xl md:text-4xl">Postula a este cargo</h1>
@@ -84,8 +85,16 @@ const PositionForm = ({ onClose, position }) => {
                     <StyledInput type="text" name="teléfono" required />
                   </div>
                   <div className="items-stretch h-full">
-                    <label htmlFor="mensaje">CV</label>
-                    <StyledInput type="file" name="cv" required />
+                    <label htmlFor="cv">CV</label>
+                    <StyledInput type="file" name="cv" id="cv" required />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      className="invisible"
+                      value=""
+                      name="_empty_field"
+                    />
                   </div>
                 </div>
               </div>

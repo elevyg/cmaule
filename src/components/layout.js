@@ -19,8 +19,8 @@ const Layout = ({ children, page }) => {
       <Navbar page={page} />
       <div>
         <main className="h-auto ">{children}</main>
-        <footer className="h-64 bg-custom-gray flex justify-around items-center text-white">
-          <div className="flex flex-col items-start">
+        <footer className="h-64 bg-custom-gray flex flex-col md:flex-row justify-around items-start md:items-center text-white ">
+          <div className="flex flex-col items-start ml-4 md:ml-0">
             © Derechos reservados {new Date().getFullYear()}
             <Link
               to="/trabaja-con-nosotros"
