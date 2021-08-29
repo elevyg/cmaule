@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "name": "Camión Tolva 14 cubos",
+    "name": "Camión Tolva 14 m³",
     "price": 135,
     "priceTimeUnit": "month"
   },
   {
     "id": 2,
-    "name": "Camión Tolva 10 cubos",
+    "name": "Camión Tolva 10 m³",
     "price": 102,
     "priceTimeUnit": "month"
   },
   {
     "id": 3,
-    "name": "Camión Aljibe 10 litros",
+    "name": "Camión Aljibe 10 m³",
     "price": 98,
     "priceTimeUnit": "month"
   },
   {
     "id": 4,
-    "name": "Camión Pluma 20TM ",
+    "name": "Camión Pluma 20 TM",
     "price": 160,
     "priceTimeUnit": "month"
   }

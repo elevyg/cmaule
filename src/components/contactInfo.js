@@ -16,11 +16,11 @@ const ContactInfo = ({ footer = false }) => {
         <p>Napoleón 3010 Of 72, Las Condes, Santiago Chile.</p>
       </IconText>
       <IconText icon={PhoneIcon} color={footer ? "white " : "green"}>
-        <p>+56 22 233 38 65</p>
+        <p>+56 222 333 865</p>
       </IconText>
       <IconText icon={MailIcon} color={footer ? "white " : COLORES[1]}>
         <p className="hover:text-custom-blue hover:font-semibold">
-          <a href="mailto:contacto@cmaule.cl">contacto@cmaule.cl</a>
+          <a href="mailto:contacto@cmaule.cl">contacto@cmaule.com</a>
         </p>
       </IconText>
     </div>

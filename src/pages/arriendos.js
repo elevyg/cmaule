@@ -57,14 +57,13 @@ const Arriendos = ({ data }) => {
         image={data.camiones.childImageSharp.fluid}
         name="camiones"
       >
-        {trucks.map(t => (
-          <div className="my-3 mx-10">
-            <h1 className="text-2xl text-custom-gray">{t.name}</h1>
-            <h3 className="font-semibold text-custom-yellow text-xl">
-              {t.price} UF + IVA / mes
-            </h3>
-          </div>
-        ))}
+        <div className="flex direction-column justify-around">
+          {trucks.map(t => (
+            <div className="my-3 mx-10">
+              <h1 className="text-2xl text-custom-gray">{t.name}</h1>
+            </div>
+          ))}
+        </div>
       </SingleItemCard>
       <TitleAndQuote onClick={handleOnClick}>
         <SectionHeader>Pavimentadora</SectionHeader>
@@ -76,9 +75,6 @@ const Arriendos = ({ data }) => {
       >
         <div className="my-3 mx-10">
           <h1 className="text-2xl text-custom-gray">{pavimentadora.name}</h1>
-          <h3 className="font-semibold text-custom-yellow text-xl">
-            2 UF + IVA / día
-          </h3>
           <p>
             Arriendo de hormigón pavimentadora autopropulsada 3.0 a 5.0 m de
             ancho, 45cm profundidad máximo, base Santiago, con operador,

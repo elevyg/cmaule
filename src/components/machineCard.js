@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+
 const MachineCard = ({ name, price, children }) => {
   return (
     <motion.div
@@ -7,11 +8,8 @@ const MachineCard = ({ name, price, children }) => {
       whileHover={{ scale: 1.025 }}
     >
       {children}
-      <div className="flex flex-col w-1/2 items-start justify-between ml-3 min-h-full">
+      <div className="flex flex-col w-1/2 items-start justify-center ml-3 min-h-full">
         <h1 className="text-lg text-custom-gray">{name}</h1>
-        <h3 className="font-semibold text-custom-yellow text-xl">
-          {price} UF + IVA / hora
-        </h3>
       </div>
     </motion.div>
   )

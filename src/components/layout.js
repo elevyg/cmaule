@@ -23,7 +23,7 @@ const Layout = ({ children, page }) => {
           <div className="flex flex-col items-start">
             © Derechos reservados {new Date().getFullYear()}
             <Link
-              to="/trabajaConNosotros"
+              to="/trabaja-con-nosotros"
               className="focus:outline-none font-bold py-2 px-4 rounded mt-3 bg-white text-custom-gray text-base"
             >
               Trabaja con Nosotros

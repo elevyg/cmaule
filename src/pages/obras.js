@@ -30,6 +30,7 @@ const Obras = ({ data }) => {
       setSelectedObra(null)
     }
   }, [toggle, obraId, obras])
+
   return (
     <Layout>
       <SEO title="Obras" />
@@ -87,7 +88,7 @@ const ObraModal = ({ onClick, obra }) => {
   if (obra) {
     return (
       <Modal>
-        <div className="flex flex-col justify-start items-center overflow-y-hidden bg-white rounded-md px-3 py-3 border-t-8 border-custom-blue borde">
+        <div className="flex flex-col justify-start items-center overflow-y-hidden bg-white rounded-md px-10 py-10 border-t-8 border-custom-blue borde">
           <div>
             <button
               onClick={() => onClick(false)}
