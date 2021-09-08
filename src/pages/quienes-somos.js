@@ -93,7 +93,8 @@ const QuienesSomos = ({ data }) => {
                 fluid={data.file.childImageSharp.fluid}
                 objectFit="cover"
                 objectPosition="50% 50%"
-                alt="people"
+                alt="oficina"
+                loading="eager"
                 className="w-full h-full overflow-hidden rounded-t-md md:rounded-t-none md:rounded-r-md "
               />
             </div>
