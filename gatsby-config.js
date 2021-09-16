@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: `/cmaule`,
   siteMetadata: {
     title: `CMaule`,
     description: `Constructora Civil Mauricio Levy`,
