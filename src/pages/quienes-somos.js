@@ -44,7 +44,7 @@ const QuienesSomos = ({ data }) => {
               fluid={retro}
               objectFit="cover"
               objectPosition="50% 50%"
-              alt="oficina"
+              alt="retro"
               loading="eager"
               className="w-full h-full overflow-hidden rounded-t-md md:rounded-t-none md:rounded-r-md "
             />
