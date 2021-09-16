@@ -6,7 +6,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const QuienesSomos = ({ data }) => {
-  console.log(data)
+  const { allImageSharp } = data
+
+  const officeImage = allImageSharp.edges.find(
+    n => n.node.fluid.originalName === "oficina.jpg"
+  ).node.fluid
+  const retro = allImageSharp.edges.find(
+    n => n.node.fluid.originalName === "retro_aeropuerto.jpg"
+  ).node.fluid
+
   return (
     <Layout>
       <SEO title="Quienes Somos" />
@@ -31,7 +39,16 @@ const QuienesSomos = ({ data }) => {
           </p>
         </div>
         <div className="w-full flex justify-center flex-col md:flex-row-reverse">
-          <div className="w-full md:w-1/2"></div>
+          <div className="w-full md:w-1/2">
+            <Img
+              fluid={retro}
+              objectFit="cover"
+              objectPosition="50% 50%"
+              alt="oficina"
+              loading="eager"
+              className="w-full h-full overflow-hidden rounded-t-md md:rounded-t-none md:rounded-r-md "
+            />
+          </div>
           <div className="w-full md:w-1/2 bg-gray-300 p-6">
             <p className="mb-6 mr-6 leading-7">
               Constructora Mauricio Levy, es una empresa contratista que inició
@@ -90,7 +107,7 @@ const QuienesSomos = ({ data }) => {
             </div>
             <div className="w-full md:w-5/12 h-full overflow-hidden">
               <Img
-                fluid={data.file.childImageSharp.fluid}
+                fluid={officeImage}
                 objectFit="cover"
                 objectPosition="50% 50%"
                 alt="oficina"
@@ -108,12 +125,15 @@ const QuienesSomos = ({ data }) => {
 export default QuienesSomos
 
 export const query = graphql`
-  query MyQuery {
-    file(relativePath: { eq: "oficina.jpg" }) {
-      id
-      childImageSharp {
-        fluid(maxWidth: 40000, maxHeight: 60000) {
-          ...GatsbyImageSharpFluid
+  {
+    allImageSharp {
+      edges {
+        node {
+          id
+          fluid(maxWidth: 1000, maxHeight: 1000) {
+            originalName
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
