@@ -18,7 +18,7 @@ const Navbar = ({ page }) => {
 
   return (
     <motion.header
-      className="flex flex-col w-full h-auto"
+      className="flex flex-col w-full h-auto md:p-10"
       style={
         scrolled > 16 * 14
           ? { backgroundColor: backgroundColor }
@@ -31,7 +31,7 @@ const Navbar = ({ page }) => {
         <div className="hidden md:flex justify-center mb-8 mr-5 text-l lg:text-xl">
           <LinkList page={page} />
         </div>
-        <div className=" flex md:hidden text-white justify-center mb-8 mr-5 text-xl">
+        <div className=" flex md:hidden text-white justify-center mb-8 mr-5 text-xl ">
           <motion.button
             onClick={() => setOnHamburgerClick(prev => !prev)}
             className="outline-none focus:outline-none"
@@ -43,7 +43,7 @@ const Navbar = ({ page }) => {
         </div>
       </div>
 
-      <div className="md:hidden flex flex-grow flex-col  align-end w-full text-center text-lg">
+      <div className="md:hidden flex flex-grow flex-col  align-end w-full text-center text-lg w-full">
         {onHamburgerClick && <LinkList />}
       </div>
     </motion.header>
@@ -59,7 +59,7 @@ const Logo = () => (
       <LogoIcon className="h-20 fill-current text-white mt-3" />
       <div>
         <h3 className="text-xl font-bold">Constructora</h3>
-        <h1 className="text-4xl ">Mauricio Levy</h1>
+        <h1 className="text-4xl leading-9">Mauricio Levy</h1>
       </div>
     </Link>
   </>
@@ -67,7 +67,7 @@ const Logo = () => (
 
 const LinkList = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center w-full">
       <Link to="/quienes-somos" className="hover:text-gray-500 mx-3 text-white">
         Quiénes Somos
       </Link>

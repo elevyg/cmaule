@@ -12,10 +12,7 @@ html {
 
 #navbar {
   position: fixed;
-  /* opacity: 0.5; */
-  /* height: 6rem; */
   top: 0px;
-  padding: 0 20px;
   transition: 0.5s;
   z-index: 20;
 }

@@ -15,7 +15,7 @@ import { Link } from "gatsby"
 
 const Layout = ({ children, page }) => {
   return (
-    <div className="">
+    <div>
       <Navbar page={page} />
       <div>
         <main className="h-auto ">{children}</main>
